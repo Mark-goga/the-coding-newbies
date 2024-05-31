@@ -1,13 +1,7 @@
 .reviews {}
 
 .container-reviews {
-    width: 100%;
-    max-width: 360px;
-    min-width: 320px;
-    box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+    height: 100%;
 }
 
 .reviews-title {
@@ -73,10 +67,20 @@
     color: #292929;
 }
 
+.swiper {
+    height: 100%;
+}
+.swiper-item-wrap {
+    height: 232px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
 .swiper-button-wrap {
     display: flex;
     gap: 16px;
     justify-content: flex-end;
+    margin-top: 20px;
 }
 
 .swiper-button-next,
