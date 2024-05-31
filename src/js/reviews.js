@@ -5,18 +5,7 @@ import 'swiper/css';
 const prevButton = document.querySelector('.swiper-button-prev');
 const nextButton = document.querySelector('.swiper-button-next');
 const reviewsListEl = document.querySelector(".reviews-list");
-var swiper = new Swiper(".mySwiper", {
-    speed: 400,
-    spaceBetween: 100,
-    modules: [Navigation, Keyboard],
-    keyboard: {
-        enabled: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+
 
 function truncate(text, lenght) {
   if (!text) return '';
@@ -49,11 +38,24 @@ function renderReviews(dataReviews) {
   reviewsListEl.insertAdjacentHTML('beforeend', render);
 }
 
-fetchReviews()
-.then(data => {
-    renderReviews(data);  
-}).catch(error => {
-    alert("Error: " + error.message);
-    reviewsListEl.innerHTML = "<li class='reviews-item'><span class='not-found'>Not found<span></li>";
-});
-
+export default function review() {
+    var swiper = new Swiper(".mySwiper", {
+    speed: 400,
+    spaceBetween: 100,
+    modules: [Navigation, Keyboard],
+    keyboard: {
+        enabled: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    });
+    fetchReviews()
+    .then(data => {
+        renderReviews(data);  
+    }).catch(error => {
+        alert("Error: " + error.message);
+        reviewsListEl.innerHTML = "<li class='reviews-item'><span class='not-found'>Not found<span></li>";
+    });
+}    
