@@ -19,6 +19,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 /* Reset styles */
 h1,
