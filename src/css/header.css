@@ -1,0 +1,150 @@
+.header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 20px;
+}
+
+.header-item a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+.header-logo {
+  font-family: Impact;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.second-part-logo {
+  color: #00b068;
+}
+
+.burger-button {
+  display: flex;
+
+  border: none;
+
+  padding: 0;
+
+  background-color: transparent;
+  stroke: #1b414b;
+  fill: #1b414b;
+}
+
+.header-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+  }
+
+  .header-navigation {
+    padding: 32px 32px;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-item a {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-item a:hover,
+  .header-item a:focus {
+    color: #00b068;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .burger-button {
+    display: none;
+  }
+
+  .switch {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-container {
+    max-width: 1280px;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 1000ms;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 1000ms;
+  }
+
+  input:checked + .slider {
+    background-color: #00b068;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+
+/* Black-theme */
+
+.dark-mode {
+  background-color: #292929;
+  color: #ffffff;
+}
+
+.header-link.black-theme-link {
+    color: #ffffff 
+}
+
+.black-theme-logo {
+  color: #ffffff;
+}
