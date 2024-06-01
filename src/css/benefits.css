@@ -64,3 +64,6 @@
   letter-spacing: 0.03em;
   color: #292929;
 }
+
+@media only screen and (min-width: 768px) {
+}
