@@ -1,0 +1,94 @@
+/* ============== HERO Mobile STYLES ============== */
+
+.hero-section{
+  margin-bottom: 700px;  /* Відредагувати*/
+  }
+  
+  .hero-sentence{
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  
+  }
+  .break{
+      color: #00B068;
+      text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .hero-title{
+      display: block;
+      width: 100%;
+    padding-top: 112px; 
+    padding-bottom: 40px;  
+  }
+  
+  @media screen and (max-width: 767px) {
+      .hero-bgr{
+  background-image: url(../img/mobile-decor.png);
+  
+      }  
+    }
+  
+    .hero-info{
+      font-family:'Poppins';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 156%;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding-bottom: 72px;
+    }
+  
+    .hero-second-part{
+      padding-bottom: 40px;
+    }
+    .hero-text-deco {
+      color: #00B068;
+    }
+  .social-links{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .social-media{
+      
+      display: block;
+      width: 100%;
+      background-color: #E4E5E6;
+    }
+  
+  
+  
+  
+  
+  
+  
+  /* ============== HERO DESCTOP STYLES ============== */
+  
+  /*
+  @media screen and (min-width: 1280px) {
+     
+  .hero-title{
+  font-family: "Impact", sans-serif;
+  font-weight: 400;
+  font-size: 136px;
+  line-height: 156.4px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  
+       }
+  
+       .h1-deco{
+          
+       }
+       .break{
+          display: block;
+       }
+  }
+  
+  */
