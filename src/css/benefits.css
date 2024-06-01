@@ -10,7 +10,8 @@
 }
 
 .benefit-icon {
-  fill: #292929;
+  stroke: #00b068;
+  fill: transparent;
 }
 
 .benefits-title {
@@ -32,7 +33,7 @@
   flex-direction: column;
 }
 
-.benefits-list-item {
+.benefits-list-item:not(:first-child) {
   margin-top: 32px;
 }
 
@@ -43,10 +44,10 @@
   border-radius: 8px;
 }
 
-.benefit-title {
+.benefit-card-title {
   margin-top: 16px;
-  text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -66,4 +67,48 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .benefits-section {
+    padding-bottom: 80px;
+  }
+
+  .benefits-title {
+    max-width: 704px;
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+  }
+
+  .benefits-content {
+    margin-top: 0;
+    position: relative;
+    top: -18px;
+  }
+
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .benefits-list .benefits-list-item:first-child {
+    margin-left: 368px;
+  }
+
+  .benefits-list .benefits-list-item:nth-child(3) {
+    margin-left: 32px;
+  }
+
+  .benefits-list-item {
+    margin-top: 0;
+  }
+
+  .benefit-card-title {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+
+  .benefit-text {
+    max-width: 336px;
+    font-size: 16px;
+  }
 }
