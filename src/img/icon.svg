@@ -17,8 +17,9 @@
       <path stroke-linecap="round" stroke-width="2.667" d="m24 12-8 8-8-8"/>
     </symbol>
     <symbol id="icon-arrow-narrow-right" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M5.333 16h21.333M18.667 8l8 8-8 8"/>
-    </symbol>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M5.333 16h21.333"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M18.667 8l8 8-8 8"></path>
+</symbol>
     <symbol id="icon-location" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M20 14a4.003 4.003 0 0 1-4 4 4.003 4.003 0 0 1-4-4 4.003 4.003 0 0 1 4-4 4.003 4.003 0 0 1 4 4z"/>
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M26 14c0 9.523-10 15-10 15S6 23.523 6 14a10.001 10.001 0 0 1 20 0z"/>
