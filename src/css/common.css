@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Impact";
-  src: url("../font/impact-webfont.woff2") format("woff2"),
-    url("../font/impact-webfont.woff") format("woff");
+  font-family: 'Impact';
+  src: url('../font/impact-webfont.woff2') format('woff2'),
+    url('../font/impact-webfont.woff') format('woff');
 }
 :root {
   font-family: 'Poppins', 'Montserrat', Impact, sans-serif;
@@ -10,7 +10,7 @@
   font-weight: 400;
 
   color: #292929;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
