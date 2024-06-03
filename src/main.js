@@ -1,6 +1,6 @@
 import review from './js/reviews';
 import { initializeSlider } from './js/slider';
-import { blackFooter } from './js/blackFooter';
+import initProjectLoadMore from "./js/my-project";
 initializeSlider();
 review();
-blackFooter();
+initProjectLoadMore();
