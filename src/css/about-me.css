@@ -1,0 +1,135 @@
+.container {
+    padding-bottom: 80px;
+}
+
+.about-me-section {
+    position: relative;
+}
+
+.about-me-title {
+    font-family: Impact;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.accent {
+    color: #00B068;
+}
+
+.image-decor {
+   visibility: hidden;
+   position: absolute;
+}
+
+.about-me-segment {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.about-me-segment-title {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.bio-content {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.about-me-segment-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-segment-text {
+    width: 100%;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.list-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+
+}
+.list-item:last-child {
+    margin-bottom: 0;
+}
+
+.list-marker {
+    width: 4px;
+    height: 4px;
+    margin: 10px;
+    border-radius: 1px;
+    background: #00B068;
+
+}
+
+.my-photo {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding-bottom: 124px;
+    }
+    .about-me-title {
+        font-size: 108px;
+    }
+    .about-me-segment-title {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+    .about-me-segment-container {
+        flex-direction: row;
+        gap: 32px;
+    }
+    .image-decor {
+        visibility: visible;
+        position: relative;
+        left: 368px;
+    }
+    .my-photo {
+        position: relative;
+        top: 368px;
+    }
+    .skills {
+        position: relative;
+        top: -148px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        padding-bottom: 164px;
+    }
+    .about-me-segment-container {
+        gap: 136px;
+        padding-left: 104px;
+    }
+    .my-photo {
+        top: 280px;
+        left: 104px;
+    }
+    .image-decor {
+        left: 836px;
+        }
+    .skills {
+        top: -40px;
+        padding-left: 208px;
+        padding-right: 104px;
+    }
+}

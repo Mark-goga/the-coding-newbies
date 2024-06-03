@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import { Navigation , Keyboard } from 'swiper/modules';
 import 'swiper/css';
 
+const containerEl = document.querySelector('.container-reviews');
 const prevButton = document.querySelector('.swiper-button-prev');
 const nextButton = document.querySelector('.swiper-button-next');
 const reviewsListEl = document.querySelector(".reviews-list");
@@ -11,8 +12,8 @@ function truncate(text, lenght) {
   if (!text) return '';
 
   if (text.length <= lenght) return text;
-
-  if (window.innerWidth >= 320 && window.innerWidth <= 767) {
+  
+  if (containerEl.scrollWidth >= 320 && containerEl.scrollWidth <= 767) {
     return text.slice(0, lenght) + '...';
   }
   return text;
