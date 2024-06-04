@@ -136,6 +136,9 @@
   /* .swiper-item-wrap {
     height: 160px;
   } */
+  .swiper-wrap {
+    height: 224px;
+  }
   .reviews-item {
     height: 224px !important;
   }
