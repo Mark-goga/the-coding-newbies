@@ -1,12 +1,7 @@
 /* ============== HERO Mobile STYLES ============== */
-
-.hero-section{
-  padding-bottom: 80px;  /* нижній відступ від секції*/
-  }
-  @media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
     .decor {
      background-image: url(../img/mobile-decor.png);
-     
      background-repeat: no-repeat;
      padding-bottom: 16px;
      background-position: -23px 0;
@@ -14,13 +9,20 @@
     } 
     .hidden{
       display: none;
-    } 
+    }
+    .hero-section{
+      margin-bottom: 80px;  /* нижній відступ від секції, це правильно, треба прибрати з social media position absolute і потім margin спрацюэ*/
+      
+      } 
+      
+      
+    
   }
 
   /*Text style*/
 .hero-title{
   display: block;
-  width: 100%;
+ /* width: 100%;*/
   padding-top: 96px; 
   padding-bottom: 40px;
 }
@@ -109,9 +111,10 @@ text-transform: uppercase;
       display: block;
       background-color: rgba(228, 229, 230, 0.5);
       width: 100vw;
-      position: absolute; 
+      position: absolute;
       left:0; 
   }
+
   
   .social-links{
       display: flex;
@@ -122,6 +125,7 @@ text-transform: uppercase;
       font-size: 16px;
      line-height: 150%;
      letter-spacing: 0.03em;
+
     }
 
  
@@ -129,6 +133,11 @@ text-transform: uppercase;
   /* ============== HERO Tablet STYLES ============== */
 
   @media screen and (min-width: 768px) {
+
+    .hero-section{
+      margin-bottom: 124px;  /* нижній відступ від секції*/
+      } 
+
     .decor {
       background-image: url(../img/tablet-decor.png);
       background-repeat: no-repeat;
@@ -194,6 +203,9 @@ text-transform: uppercase;
   
   
   @media screen and (min-width: 1280px) {
+    .hero-section{
+      margin-bottom: 99px;  /* нижній відступ від секції*/
+      } 
 
     .decor {
       background-image: url(../img/the-whole-desktop-hero.png);
