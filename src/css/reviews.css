@@ -1,4 +1,5 @@
 .reviews {
+  margin-bottom: 80px;
 }
 
 .container-reviews {
@@ -136,11 +137,20 @@
   /* .swiper-item-wrap {
     height: 160px;
   } */
+  .swiper-wrap {
+    height: 224px;
+  }
+  .reviews {
+    padding-bottom: 124px;
+  }
   .reviews-item {
     height: 224px !important;
   }
 }
 @media screen and (min-width: 1280px) {
+  .reviews {
+      padding-bottom: 164px;
+    }
   /* .swiper {
         width:100%;
 
