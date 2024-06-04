@@ -1,3 +1,7 @@
+.section-faq {
+  margin-bottom: 80px;
+}
+
 .faq-container {
   width: 100%;
   max-width: 360px;
@@ -178,6 +182,12 @@
 }
 
 @media screen and (min-width: 768px ) {
+
+  .section-faq {
+    margin-bottom: 124px;
+}
+
+
  .faq-container {
     max-width: 704px;
     margin: 0 auto;
@@ -210,6 +220,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+
+    .section-faq {
+    margin-bottom: 164px;
+}
 
     .faq-container {
         display: flex;
