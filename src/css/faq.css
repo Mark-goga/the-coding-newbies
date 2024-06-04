@@ -6,7 +6,9 @@
   margin-right: auto;
   }
 
-
+.section {
+  padding-bottom: 80px;
+}
 .faq-image-bg {
   display: none;
 }
@@ -178,6 +180,9 @@
 }
 
 @media screen and (min-width: 768px ) {
+  .section {
+      padding-bottom: 124px;
+    }
  .faq-container {
     max-width: 704px;
     margin: 0 auto;
@@ -210,7 +215,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-
+    .section {
+      padding-bottom: 164px;
+    }
     .faq-container {
         display: flex;
         padding-left: 32px;
