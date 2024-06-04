@@ -39,12 +39,22 @@
     <symbol id="icon-icon-1" viewBox="0 0 32 32">
 <path fill="none" stroke="#14c57c" style="stroke: var(--color1, #14c57c)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M6.333 25.667l19.333-19.333M25.667 6.333h-18M25.667 6.333v18"></path>
 </symbol>
+    <!-- <symbol id="icon-arrow-up" viewBox="0 0 14 9">
+        <path fill="none" stroke="#292929" stroke-linecap="round" stroke-width="2" d="M13 8L7 2L1 8"></path>
+    </symbol> -->
   </defs>
-</svg>
-<symbol id="icon-close-mobile" viewBox="0 0 32 32">
+  <symbol id="icon-arrow-up" viewBox="0 0 32 32">
+  <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M22 19l-6-6-6 6"></path>
+  </symbol>
+  <symbol id="icon-close-mobile" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24 8l-16 16"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l16 16"></path>
 </symbol>
 <symbol id="icon-burger-menu" viewBox="0 0 32 32">
 <path d="M5.334 23.027v-1.333h21.333v1.333h-21.333zM5.334 16.667v-1.333h21.333v1.333h-21.333zM5.334 10.307v-1.333h21.333v1.333h-21.333z"></path>
 </symbol>
+</svg>
+
+
+
+
