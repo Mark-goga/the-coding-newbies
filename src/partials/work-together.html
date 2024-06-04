@@ -1,0 +1,58 @@
+<section id="contact" class="cooperation-section">
+    <h2>Let’s <span class="accent-green">work together</span></h2>
+    <picture alt="Decorative Image" class="decorative-image">
+        <source
+            srcset="../img/background-desktop-1x.png 1x, ../img/background-desktop-2x.png 2x, ../img/background-desktop-3x.png 3x"
+            media="(min-width: 1280px)" />
+        <source
+            srcset="../img/background-tablet-1x.png 1x, ../img/background-tablet-2x.png 2x, ../img/background-tablet-3x.png 3x"
+            media="(min-width: 768px)" />
+        <source class="hidden" srcset="../img/background-png.png" media="(min-width: 320px)" />
+        <img class="clients-list-img" src="../img/background-png.png" alt="Decorative Image" width="526" height="408" />
+    </picture>
+    <div class="contacts-form">
+        <ul class="company-contacts">
+            <h3>Contact me to transform your ideas into exceptional solutions</h3>
+            <li class="address-list">
+                <a class="contact-item phone" href="tel:+380904567890">
+                    <svg class="icon icon-phone" width="24" height="24">
+                        <use href="../img/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 090 456 78 90
+                </a>
+            </li>
+            <li class="address-list">
+                <a class="contact-item company-mail" href="mailto:lloydjefferson@gmail.com">
+                    <svg class="icon icon-email" width="24" height="24">
+                        <use href="../img/icons.svg#icon-email"></use>
+                    </svg>
+                    lloydjefferson@gmail.com
+                </a>
+            </li>
+            <li class="address-list">
+                <a class="contact-item location" href="https://maps.google.com/?q=USA, New York" target="_blank">
+                    <svg class="icon icon-location" width="24" height="24">
+                        <use href="../img/icons.svg#icon-location"></use>
+                    </svg>
+                    USA, New York
+                </a>
+            </li>
+        </ul>
+        <form id="cooperation-form">
+            <input type="email" name="email" placeholder="Your Email*" required
+                pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+            <textarea name="comment" placeholder="Message" required></textarea>
+            <button type="submit">Send message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Modal Window -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h4>Thank you for your interest in cooperation!</h4>
+        <p>The manager will contact you shortly to discuss further details and opportunities for cooperation. Please
+            stay in touch.</p>
+    </div>
+</div>
