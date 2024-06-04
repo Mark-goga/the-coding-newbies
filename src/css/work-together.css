@@ -221,6 +221,9 @@ p {
 }
 /* Responsive styles */
 @media (max-width: 767px) {
+    .cooperation-section {
+        padding-bottom: 80px;
+    }
     .contacts-title {
         font-family: Impact;
         font-size: 52px;
@@ -280,6 +283,9 @@ p {
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
+    .cooperation-section {
+            padding-bottom: 124px;
+        }
     .cooperation-background {
         position: absolute;
         right: -50px;
@@ -338,6 +344,9 @@ p {
 }
 
 @media (min-width: 1280px) {
+    .cooperation-section {
+            padding-bottom:  164px;
+    }
     .cooperation-background {
         position: absolute;
         right: -50px;
