@@ -1,4 +1,7 @@
-.container {
+.about-me-section {
+    padding-top: 160px;
+}
+.container-about-me {
     padding-bottom: 80px;
 }
 
@@ -83,7 +86,26 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .about-me-section {
+            padding-top: 124px;
+        }
+    .about-me-background {
+        position: absolute;
+        background-image: url(/img/about-me-background-768@1x.png);
+        width: 350px;
+        height: 300px;
+        right: -50px;
+        top: -50%;
+    }
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .about-me-background {
+                background-image: url(/img/about-me-background-768@2x.png);
+                background-size: cover;
+            }
+        }
+    .container-about-me {
         padding-bottom: 124px;
     }
     .about-me-title {
@@ -95,6 +117,7 @@
     }
     .about-me-segment-container {
         flex-direction: row;
+        align-items: flex-end;
         gap: 32px;
     }
     .image-decor {
@@ -104,16 +127,37 @@
     }
     .my-photo {
         position: relative;
-        top: 368px;
+        bottom: -80px;
+        /* top: 368px; */
     }
     .skills {
+        align-items: normal;
+        margin-top: 140px;
         position: relative;
-        top: -148px;
+        /* top: -148px; */
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .container {
+    .about-me-section {
+            padding-top: 164px;
+        }
+    .about-me-background {
+        background-image: url(/img/about-me-background-1280@1x.png);
+        width: 400px;
+        height: 300px;
+        right: -50px;
+        top: -200px;
+    }
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .about-me-background {
+                background-image: url(/img/about-me-background-1280@2x.png);
+                background-size: cover;
+            }
+        }
+    .container-about-me {
         padding-bottom: 164px;
     }
     .about-me-segment-container {
@@ -121,14 +165,16 @@
         padding-left: 104px;
     }
     .my-photo {
-        top: 280px;
+        /* top: 280px; */
+        bottom: -160px;
         left: 104px;
     }
     .image-decor {
         left: 836px;
         }
     .skills {
-        top: -40px;
+        /* top: -40px; */
+        margin-top: 300px;
         padding-left: 208px;
         padding-right: 104px;
     }
