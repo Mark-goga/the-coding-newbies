@@ -7,7 +7,10 @@
   const modal = document.getElementById('modal');
   const closeButton = document.querySelector('.close-button');
   const reviewsContainer = document.getElementById('reviews-container');
-
+const formDataLocal = {
+  email: "",
+  message: "",
+};
   // Function to fetch and display reviews
   // async function fetchReviews() {
   //   try {
@@ -53,10 +56,13 @@ export default function workTogether() {
         body: JSON.stringify(data),
       });
       if (response.ok) {
+        localStorage.removeItem("feedback-form-state");
         form.reset();
         openModal();
       } else {
         showError('Failed to send the message. Please try again.');
+        form.elements.email.value = formDataLocal.email;
+        form.elements.comment.value = formDataLocal.message;
       }
     } catch (error) {
       console.error('Error:', error);
@@ -75,6 +81,15 @@ export default function workTogether() {
       closeModal();
     }
   });
+  form.addEventListener('input', (evn) => {
+    const formElements = evn.currentTarget.elements;
+    formDataLocal.email = formElements.email.value.trim();
+    formDataLocal.message = formElements.comment.value.trim();
+    localStorage.setItem("feedback-form-state", JSON.stringify(formDataLocal));
+  });
+  const localData = JSON.parse(localStorage.getItem("feedback-form-state")) ;
+  form.elements.email.value = localData ? localData.email : "";
+  form.elements.comment.value = localData ? localData.message : "";
 }
   function openModal() {
     modal.style.display = 'flex';
