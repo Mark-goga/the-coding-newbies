@@ -222,9 +222,9 @@
         display: flex;
         padding-left: 32px;
         padding-right: 32px;
-        max-width: 1216px;
-        margin-right: 0;
-        margin-left: 0;
+        max-width: 1280px;
+        /* margin-right: 0; */
+        /* margin-left: 0; */
     }
 
       .faq-item {
