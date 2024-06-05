@@ -6,7 +6,9 @@
   const form = document.getElementById('cooperation-form');
   const modal = document.getElementById('modal');
   const closeButton = document.querySelector('.close-button');
-  const reviewsContainer = document.getElementById('reviews-container');
+const reviewsContainer = document.getElementById('reviews-container');
+const svgElement = document.querySelector('.cooperation-iput-svg');
+const inputText = document.querySelector('.cooperation-input-text');
 const formDataLocal = {
   email: "",
   message: "",
@@ -45,15 +47,21 @@ const formDataLocal = {
 export default function workTogether() {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+    const formData = {
+      email: '',
+      comment: ''
+    };
+    const inputEl = form.elements.email;
+    const textAreaEl = form.elements.comment;
     try {
+      formData.email = inputEl.value.trim();
+      formData.comment = textAreaEl.value.trim();
       const response = await fetch('https://portfolio-js.b.goit.study/api/requests', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(formData),
       });
       if (response.ok) {
         localStorage.removeItem("feedback-form-state");
@@ -86,6 +94,14 @@ export default function workTogether() {
     formDataLocal.email = formElements.email.value.trim();
     formDataLocal.message = formElements.comment.value.trim();
     localStorage.setItem("feedback-form-state", JSON.stringify(formDataLocal));
+    if (formElements.email.validity.valid) {
+      formElements.email.style.color = '#e74a3b'
+      svgElement.style.display = 'block';
+      inputText.style.display = 'none'
+    } else {
+      svgElement.style.display = 'none';
+      inputText.style.display = 'block';
+    }
   });
   const localData = JSON.parse(localStorage.getItem("feedback-form-state")) ;
   form.elements.email.value = localData ? localData.email : "";
