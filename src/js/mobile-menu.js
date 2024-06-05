@@ -12,7 +12,7 @@ export default function setupMobMenu() {
         mobMenu.classList.add('is-open-mob-menu');
     });
     mobMenuExt.addEventListener('click', () => {
-        mobMenu.classList.remove('.is-open-mob-menu');
+        mobMenu.classList.remove('is-open-mob-menu');
     });
     mobMenuLinks.forEach(link => {
     link.addEventListener('click', event => {

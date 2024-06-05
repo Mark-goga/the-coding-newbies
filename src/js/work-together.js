@@ -95,10 +95,11 @@ export default function workTogether() {
     formDataLocal.message = formElements.comment.value.trim();
     localStorage.setItem("feedback-form-state", JSON.stringify(formDataLocal));
     if (formElements.email.validity.valid) {
-      formElements.email.style.color = '#e74a3b'
+      formElements.email.style.color = '#292929';
       svgElement.style.display = 'block';
       inputText.style.display = 'none'
     } else {
+      formElements.email.style.color = '#e74a3b';
       svgElement.style.display = 'none';
       inputText.style.display = 'block';
     }

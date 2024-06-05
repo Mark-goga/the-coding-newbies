@@ -3,7 +3,11 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
+}
+.header-container {
+  padding-top: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .header-item a {
@@ -50,10 +54,11 @@
 @media screen and (min-width: 768px) {
   .header-container {
     max-width: 768px;
+    padding-top: 32px;
   }
 
   .header-navigation {
-    padding: 32px 32px;
+    /* padding: 32px 32px; */
   }
 
   .header-list {
@@ -203,8 +208,15 @@
 .mob-menu-logo-svg {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
+.mob-menu-btn-svg {
+  stroke: #292929;
+}
+.mob-menu-btn {
+  display: flex;
+  align-items: center;
+}
 .mob-menu-list {
   margin-top: 50%;
   transform: translateY(50%);
