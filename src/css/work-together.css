@@ -101,7 +101,17 @@ textarea {
     justify-content: space-between;
     width: 100%;
 }
-
+.cooperation-input-wrap {
+    display: inline;
+    position: relative;
+}
+.cooperation-iput-svg {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 input,
 textarea,
 button {
@@ -130,7 +140,17 @@ textarea {
     background-color: #E4E5E6;
     border: none;
 }
-
+.cooperation-input-text {
+    display: none;
+    text-align: left;
+    margin-top: 4px;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.33333;
+    letter-spacing: 0.04em;
+    color: #e74a3b;
+}
 button {
     background-color: #00B068;
     color: white;
